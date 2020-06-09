@@ -19,7 +19,18 @@ window.addEventListener('mousemove', function(event){
     //console.log(mouse.x,mouse.y);
     }
 );
-// working great
+
+function showCoordinates(event){
+    var touchx = event.touches[0].clientX;
+    var touchy = event.touches[0].clientY;
+    mouse.x = touchx;
+    mouse,y = touchy;
+}
+
+
+
+
+    // working great
 //set interval for mouse interation.bcs i dont need to follow the entire.
 
 setInterval(function(){

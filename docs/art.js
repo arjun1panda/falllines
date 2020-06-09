@@ -18,14 +18,13 @@ window.addEventListener('mousemove', function(event){
     mouse.y = event.y;
     //console.log(mouse.x,mouse.y);
     }
-);
+); 
 
-function showCoordinates(event){
-    var touchx = event.touches[0].clientX;
-    var touchy = event.touches[0].clientY;
-    mouse.x = touchx;
-    mouse,y = touchy;
-}
+window.addEventListener('touches',function(event){
+    mouse.x = event.x;
+    mouse.y = event.y;
+    console.log(mouse.x,mouse.y);
+})
 
 
 

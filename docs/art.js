@@ -19,23 +19,15 @@ window.addEventListener('mousemove', function(event){
     //console.log(mouse.x,mouse.y);
     }
 ); 
-
-window.addEventListener('touches',function(event){
-    mouse.x = event.x;
-    mouse.y = event.y;
-   // console.log(mouse.x,mouse.y);
-});
-
-window.addEventListener('touchmove',function(event){
-    mouse.x = event.x;
-    mouse.y = event.y;
-   // console.log(mouse.x,mouse.y);
-});
+window.addEventListener('touchmove', f);
+function f(event) {
+    mouse.x = event.touches[0].clientX;
+    mouse.y = event.touches[0].clientY;
+   //console.log(mouse.x,mouse.y);
+}   
 
 
-
-
-    // working great
+// working great
 //set interval for mouse interation.bcs i dont need to follow the entire.
 
 setInterval(function(){

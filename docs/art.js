@@ -23,8 +23,14 @@ window.addEventListener('mousemove', function(event){
 window.addEventListener('touches',function(event){
     mouse.x = event.x;
     mouse.y = event.y;
-    console.log(mouse.x,mouse.y);
-})
+   // console.log(mouse.x,mouse.y);
+});
+
+window.addEventListener('touchmove',function(event){
+    mouse.x = event.x;
+    mouse.y = event.y;
+   // console.log(mouse.x,mouse.y);
+});
 
 
 
